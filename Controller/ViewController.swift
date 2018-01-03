@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var actionBtn: RoundedShadowBtn!
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
@@ -23,5 +24,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func actionBtnTapped(_ sender: Any) {
+        actionBtn.animateButton(shouldLoad: true, withMessage: nil)
+    }
 }
 
