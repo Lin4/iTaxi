@@ -24,7 +24,17 @@ class HomeVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func removeNastyMapMemory() {
+        mapView.mapType = MKMapType.standard
+        mapView.delegate = nil
+        mapView.removeFromSuperview()
+        mapView = nil
+    }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        removeNastyMapMemory()
+    }
 
     @IBAction func actionBtnTapped(_ sender: Any) {
         actionBtn.animateButton(shouldLoad: true, withMessage: nil)

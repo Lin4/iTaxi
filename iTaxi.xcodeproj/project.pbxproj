@@ -15,6 +15,8 @@
 		082DF12F1FFD2C8A0025A8D4 /* LeftSidePannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082DF12E1FFD2C8A0025A8D4 /* LeftSidePannelVC.swift */; };
 		082DF1311FFD2D550025A8D4 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082DF1301FFD2D550025A8D4 /* ContainerVC.swift */; };
 		082DF1341FFD37410025A8D4 /* CentreVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082DF1331FFD37410025A8D4 /* CentreVCDelegate.swift */; };
+		0830AB75200967DA00A5D68B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830AB74200967DA00A5D68B /* LoginVC.swift */; };
+		0839301B2009408100DF3AAB /* UIViewEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839301A2009408100DF3AAB /* UIViewEXT.swift */; };
 		08600DC91FFC0612006EA0AF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08600DC81FFC0612006EA0AF /* GradientView.swift */; };
 		08600DCB1FFC0C30006EA0AF /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08600DCA1FFC0C30006EA0AF /* RoundImageView.swift */; };
 		08600DCD1FFC0DBA006EA0AF /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08600DCC1FFC0DBA006EA0AF /* RoundedShadowView.swift */; };
@@ -34,6 +36,8 @@
 		082DF12E1FFD2C8A0025A8D4 /* LeftSidePannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePannelVC.swift; sourceTree = "<group>"; };
 		082DF1301FFD2D550025A8D4 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		082DF1331FFD37410025A8D4 /* CentreVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentreVCDelegate.swift; sourceTree = "<group>"; };
+		0830AB74200967DA00A5D68B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0839301A2009408100DF3AAB /* UIViewEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEXT.swift; sourceTree = "<group>"; };
 		08600DC81FFC0612006EA0AF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		08600DCA1FFC0C30006EA0AF /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		08600DCC1FFC0DBA006EA0AF /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 		081C45761FFBED0F00AC797C = {
 			isa = PBXGroup;
 			children = (
+				083930192009403F00DF3AAB /* Extensions */,
 				082DF1321FFD37110025A8D4 /* Protocols */,
 				08600DC71FFC05CE006EA0AF /* Controller */,
 				08600DC61FFC05C5006EA0AF /* View */,
@@ -98,6 +103,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		083930192009403F00DF3AAB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0839301A2009408100DF3AAB /* UIViewEXT.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		08600DC51FFC05B9006EA0AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +136,7 @@
 				081C45841FFBED0F00AC797C /* HomeVC.swift */,
 				082DF12E1FFD2C8A0025A8D4 /* LeftSidePannelVC.swift */,
 				082DF1301FFD2D550025A8D4 /* ContainerVC.swift */,
+				0830AB74200967DA00A5D68B /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,7 +297,9 @@
 			files = (
 				081C45851FFBED0F00AC797C /* HomeVC.swift in Sources */,
 				08600DCB1FFC0C30006EA0AF /* RoundImageView.swift in Sources */,
+				0830AB75200967DA00A5D68B /* LoginVC.swift in Sources */,
 				08600DCF1FFC0FA4006EA0AF /* RoundedView.swift in Sources */,
+				0839301B2009408100DF3AAB /* UIViewEXT.swift in Sources */,
 				082DF1311FFD2D550025A8D4 /* ContainerVC.swift in Sources */,
 				08600DCD1FFC0DBA006EA0AF /* RoundedShadowView.swift in Sources */,
 				081C45831FFBED0F00AC797C /* AppDelegate.swift in Sources */,

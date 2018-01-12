@@ -23,18 +23,17 @@ class ContainerVC: UIViewController {
     
     /**** Variables ****/
     var homeVC: HomeVC!
+    var centreController: UIViewController!
+    var leftVC: LeftSidePannelVC!
+    var isHidden = false
+    let centrePanelExpendedOffset: CGFloat = 160
+    var tap: UITapGestureRecognizer!
     var currentState: SlideOutState = .collapsed {
         didSet{
             let shoulsShowShadow = (currentState != .collapsed)
             shouldShowShadow(status: shoulsShowShadow)
         }
     }
-    
-    var centreController: UIViewController!
-    var leftVC: LeftSidePannelVC!
-    var isHidden = false
-    let centrePanelExpendedOffset: CGFloat = 160
-    var tap: UITapGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,10 +124,7 @@ extension ContainerVC: CentreVCDelegate {
         whiteCoverView.tag = 25
         
         self.centreController.view.addSubview(whiteCoverView)
-        UIView.animate(withDuration: 0.2){
-            whiteCoverView.alpha = 0.75
-        }
-        
+        whiteCoverView.fadeTo(alphaValue: 0.75, withDuration: 0.2)
         tap = UITapGestureRecognizer(target: self, action: #selector(animateLeftPanel(shouldExxpand:)))
         tap.numberOfTapsRequired = 1
         self.centreController.view.addGestureRecognizer(tap)
