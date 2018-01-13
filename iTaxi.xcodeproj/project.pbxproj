@@ -17,6 +17,8 @@
 		082DF1341FFD37410025A8D4 /* CentreVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082DF1331FFD37410025A8D4 /* CentreVCDelegate.swift */; };
 		0830AB75200967DA00A5D68B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830AB74200967DA00A5D68B /* LoginVC.swift */; };
 		0830AB77200972E000A5D68B /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830AB76200972E000A5D68B /* RoundedCornerTextField.swift */; };
+		0830AB792009B8B400A5D68B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0830AB782009B8B400A5D68B /* GoogleService-Info.plist */; };
+		0830AB7C200A1EE000A5D68B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830AB7B200A1EE000A5D68B /* DataService.swift */; };
 		0839301B2009408100DF3AAB /* UIViewEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839301A2009408100DF3AAB /* UIViewEXT.swift */; };
 		08600DC91FFC0612006EA0AF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08600DC81FFC0612006EA0AF /* GradientView.swift */; };
 		08600DCB1FFC0C30006EA0AF /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08600DCA1FFC0C30006EA0AF /* RoundImageView.swift */; };
@@ -39,6 +41,8 @@
 		082DF1331FFD37410025A8D4 /* CentreVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentreVCDelegate.swift; sourceTree = "<group>"; };
 		0830AB74200967DA00A5D68B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0830AB76200972E000A5D68B /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		0830AB782009B8B400A5D68B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0830AB7B200A1EE000A5D68B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0839301A2009408100DF3AAB /* UIViewEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEXT.swift; sourceTree = "<group>"; };
 		08600DC81FFC0612006EA0AF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		08600DCA1FFC0C30006EA0AF /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 		081C45761FFBED0F00AC797C = {
 			isa = PBXGroup;
 			children = (
+				0830AB7A200A1EBE00A5D68B /* DataService */,
 				083930192009403F00DF3AAB /* Extensions */,
 				082DF1321FFD37110025A8D4 /* Protocols */,
 				08600DC71FFC05CE006EA0AF /* Controller */,
@@ -93,6 +98,7 @@
 				081C45891FFBED0F00AC797C /* Assets.xcassets */,
 				081C458B1FFBED0F00AC797C /* LaunchScreen.storyboard */,
 				081C458E1FFBED0F00AC797C /* Info.plist */,
+				0830AB782009B8B400A5D68B /* GoogleService-Info.plist */,
 			);
 			path = iTaxi;
 			sourceTree = "<group>";
@@ -103,6 +109,14 @@
 				082DF1331FFD37410025A8D4 /* CentreVCDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0830AB7A200A1EBE00A5D68B /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				0830AB7B200A1EE000A5D68B /* DataService.swift */,
+			);
+			path = DataService;
 			sourceTree = "<group>";
 		};
 		083930192009403F00DF3AAB /* Extensions */ = {
@@ -224,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				081C458D1FFBED0F00AC797C /* LaunchScreen.storyboard in Resources */,
+				0830AB792009B8B400A5D68B /* GoogleService-Info.plist in Resources */,
 				081C458A1FFBED0F00AC797C /* Assets.xcassets in Resources */,
 				081C45881FFBED0F00AC797C /* Main.storyboard in Resources */,
 			);
@@ -307,6 +322,7 @@
 				08600DCD1FFC0DBA006EA0AF /* RoundedShadowView.swift in Sources */,
 				081C45831FFBED0F00AC797C /* AppDelegate.swift in Sources */,
 				082DF1341FFD37410025A8D4 /* CentreVCDelegate.swift in Sources */,
+				0830AB7C200A1EE000A5D68B /* DataService.swift in Sources */,
 				082DF12F1FFD2C8A0025A8D4 /* LeftSidePannelVC.swift in Sources */,
 				0830AB77200972E000A5D68B /* RoundedCornerTextField.swift in Sources */,
 				8D9C02231FFC8E1200853703 /* RoundedShadowBtn.swift in Sources */,
