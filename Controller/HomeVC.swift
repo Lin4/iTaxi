@@ -8,14 +8,22 @@
 
 import UIKit
 import MapKit
+import RevealingSplashView
 
 class HomeVC: UIViewController {
     @IBOutlet weak var actionBtn: RoundedShadowBtn!
     @IBOutlet weak var mapView: MKMapView!
     
+    let revelingSplashView = RevealingSplashView(iconImage: UIImage(named: "launchScreenIcon")!, iconInitialSize: CGSize(width: 80, height: 80), backgroundColor: UIColor.white)
+    
     var delegate: CentreVCDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addSubview(revelingSplashView)
+        revelingSplashView.animationType = SplashAnimationType.heartBeat
+        revelingSplashView.startAnimation()
+        
+        revelingSplashView.heartAttack = true
        
     }
 
