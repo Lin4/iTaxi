@@ -357,6 +357,9 @@
                                                                 <segment title="Driver"/>
                                                             </segments>
                                                             <color key="tintColor" red="0.84705882349999995" green="0.2784313725" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <connections>
+                                                                <action selector="segmentedControl:" destination="DaY-bC-0aw" eventType="valueChanged" id="9JH-Xy-Xsf"/>
+                                                            </connections>
                                                         </segmentedControl>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-zW-3mm">
                                                             <rect key="frame" x="0.0" y="116" width="280" height="114"/>
@@ -387,7 +390,7 @@
                                                 </stackView>
                                             </subviews>
                                         </stackView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-qq-N13">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-qq-N13" customClass="RoundedShadowBtn" customModule="iTaxi" customModuleProvider="target">
                                             <rect key="frame" x="20" y="488" width="280" height="60"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -397,6 +400,9 @@
                                             <state key="normal" title="SIGN UP / LOGIN">
                                                 <color key="titleColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </state>
+                                            <connections>
+                                                <action selector="signIn:" destination="DaY-bC-0aw" eventType="touchUpInside" id="IBT-F9-ZwR"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -426,6 +432,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dE5-Pl-QL4"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="lkR-gF-Yhq" id="1Aj-TZ-x8M"/>
+                        <outlet property="passwordTextField" destination="PPX-yt-fVm" id="Iic-f0-uYq"/>
+                        <outlet property="segmentedControl" destination="euO-V8-Eku" id="BT6-4q-wYf"/>
+                        <outlet property="signInLoginBtn" destination="7Zz-qq-N13" id="5vz-wz-ygd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnr-2G-95a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
